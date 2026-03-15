@@ -1,0 +1,9 @@
+@startuml
+!include ../common.puml
+
+!global $USER_BG_COLOR?="PowderBlue"
+!global $ACTIVITY_BG_COLOR?="Orange"
+!global $STEP_BG_COLOR?="MediumBlue"
+!global $STORY_BG_COLOR?="Gold"
+
+@enduml
