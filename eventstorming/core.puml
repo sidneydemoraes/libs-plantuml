@@ -6,6 +6,7 @@
 !global $SYSTEM_BG_COLOR?="Pink" 
 !global $AGGREGATE_BG_COLOR?="Light goldenrod yellow" 
 !global $ACTOR_BG_COLOR?="Gold" 
+!global $POLICY_BG_COLOR?="Medium purple" 
 
 left to right direction 
 
@@ -58,4 +59,12 @@ skinparam rectangle<<Aggregate>> {
 
 skinparam rectangle<<Actor>> {
   BackgroundColor $ACTOR_BG_COLOR
+}
+
+!procedure Policy($id, $name="", $originId="" )
+  ESCard($id, Policy, $name, $originId)
+!endprocedure 
+
+skinparam rectangle<<Policy>> {
+  BackgroundColor $POLICY_BG_COLOR
 }
