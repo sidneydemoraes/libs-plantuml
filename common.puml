@@ -27,12 +27,8 @@
 !endprocedure
 
 !unquoted procedure Card($id, $shape, $stereotype, $name="")
-  hide <<$stereotype>> stereotype
   !if ($name == "")
     $name = "$id"
   !endif
-  $shape $id <<$stereotype>> as "$name" [
-    <<$stereotype>>
-    $name
-  ]
+  $shape $id <<$stereotype>> as "$name"
 !endprocedure
