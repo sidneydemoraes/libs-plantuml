@@ -31,5 +31,10 @@
   !if (name == "")
     $name = "$id"
   !endif
-  $shape $id <<$stereotype>> as "$name"
+  $shape $id <<$stereotype>> as "$name" [
+    <<$stereotype>>
+
+
+    $name
+  ]
 !endprocedure
