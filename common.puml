@@ -21,3 +21,10 @@
   !endif
   end header
 !endprocedure
+
+!unquoted procedure Card($id, $shape, $stereotype, $name="")
+  !if (!name)
+    $name = "$id"
+  !endif
+  $shape $id <<$stereotype>> as $name
+!endprocedure
