@@ -1,4 +1,3 @@
-@startuml
 !$LIB_BASE?="https://raw.githubusercontent.com/sidneydemoraes/libs-plantuml/main"
 !include $LIB_BASE/common.puml
 
@@ -9,4 +8,4 @@
 
 !procedure User($id, $name="")
   Card($id, Rectangle, User, $name)
-@enduml
+!endprocedure
