@@ -6,11 +6,15 @@
 
 left to right direction 
 
-!procedure Event($id, $name="", $originCommandId="")
-  Card($id, rectangle, DomainEvent, $name)
+!unquoted procedure ESCard($id, $stereotype, $name="", &originId="")
+  Card($id, rectangle, $stereotype, $name)
   !if ($originCommandId != "")
-    $originCommandId --> $id
+    $originId --> $id
   !endif
+!endprocedure
+
+!procedure Event($id, $name="", $originId="")
+  ESCard($id, DomainEvent, $name, $originId)
 !endprocedure
 
 skinparam rectangle<<DomainEvent>> {
@@ -18,8 +22,8 @@ skinparam rectangle<<DomainEvent>> {
   FontColor $FONT_COLOR
 }
 
-!procedure Command($id, $name="")
-  Card($id, rectangle,Command,$name)
+!procedure Command($id, $name="", $originId="" )
+  ESCard($id, Command, $name, $originId)
 !endprocedure 
 
 skinparam rectangle<<Command>> {
