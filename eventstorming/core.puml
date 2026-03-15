@@ -1,5 +1,6 @@
 @startuml
-!include ../common.puml
+!$LIB_BASE?="https://raw.githubusercontent.com/sidneydemoraes/libs-plantuml/main/"
+!include $LIB_BASE/common.puml
 
 !global $USER_BG_COLOR?="PowderBlue"
 !global $ACTIVITY_BG_COLOR?="Orange"
