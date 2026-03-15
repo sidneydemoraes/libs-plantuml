@@ -7,6 +7,7 @@
 !global $AGGREGATE_BG_COLOR?="Light goldenrod yellow" 
 !global $ACTOR_BG_COLOR?="Gold" 
 !global $POLICY_BG_COLOR?="Medium purple" 
+!global $READ_MODEL_BG_COLOR?=*Yellow green"
 
 left to right direction 
 
@@ -67,4 +68,12 @@ skinparam rectangle<<Actor>> {
 
 skinparam rectangle<<Policy>> {
   BackgroundColor $POLICY_BG_COLOR
+}
+
+!procedure ReadModel($id, $name="", $originId="" )
+  ESCard($id, ReadModel, $name, $originId)
+!endprocedure 
+
+skinparam rectangle<<ReadModel>> {
+  BackgroundColor $READ_MODEL_BG_COLOR
 }
