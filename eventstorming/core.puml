@@ -6,6 +6,10 @@
 
 left to right direction 
 
+skinparam rectangle {
+  FontColor $FONT_COLOR
+}
+
 !unquoted procedure ESCard($id, $stereotype, $name="", &originId="")
   Card($id, rectangle, $stereotype, $name)
   !if ($originCommandId != "")
@@ -19,7 +23,6 @@ left to right direction
 
 skinparam rectangle<<DomainEvent>> {
   BackgroundColor $EVENT_BG_COLOR
-  FontColor $FONT_COLOR
 }
 
 !procedure Command($id, $name="", $originId="" )
@@ -28,5 +31,4 @@ skinparam rectangle<<DomainEvent>> {
 
 skinparam rectangle<<Command>> {
   BackgroundColor $COMMAND_BG_COLOR
-  FontColor $FONT_COLOR
 }
