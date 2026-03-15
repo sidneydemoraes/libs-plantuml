@@ -5,10 +5,10 @@
 !global $COMMAND_BG_COLOR?="MediumTurquoise"
 
 !procedure Event($id, $name="")
-  Card($id, Rectangle, Event, $name)
+  Card($id, rectangle, DomainEvent, $name)
 !endprocedure
 
-skinparam rectangle<<Event>> {
+skinparam rectangle<<DomainEvent>> {
   BackgroundColor $EVENT_BG_COLOR
   FontColor $FONT_COLOR
 }
