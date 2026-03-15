@@ -1,5 +1,5 @@
 @startuml
-!$LIB_BASE?="https://raw.githubusercontent.com/sidneydemoraes/libs-plantuml/main/"
+!$LIB_BASE?="https://raw.githubusercontent.com/sidneydemoraes/libs-plantuml/main"
 !include $LIB_BASE/common.puml
 
 !global $USER_BG_COLOR?="PowderBlue"
@@ -7,4 +7,6 @@
 !global $STEP_BG_COLOR?="MediumBlue"
 !global $STORY_BG_COLOR?="Gold"
 
+!procedure User($id, $name="")
+  Card($id, Rectangle, User, $name)
 @enduml
