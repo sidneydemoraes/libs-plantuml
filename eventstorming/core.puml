@@ -12,3 +12,12 @@ skinparam rectangle<<DomainEvent>> {
   BackgroundColor $EVENT_BG_COLOR
   FontColor $FONT_COLOR
 }
+
+!procedure Command($id, $name="")
+  Card($id, rectangle,Command,$name)
+!endprocedure 
+
+skinparam rectangle<<Command>> {
+  BackgroundColor $COMMAND_BG_COLOR
+  FontColor $FONT_COLOR
+}
