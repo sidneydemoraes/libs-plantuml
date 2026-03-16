@@ -15,7 +15,7 @@ skinparam rectangle {
   FontColor $FONT_COLOR
 }
 
-!unquoted procedure ESCard($id, $stereotype, $name="", &originId="")
+!unquoted procedure ESCard($id, $stereotype, $name="", $originId="")
   Card($id, rectangle, $stereotype, $name)
   !if ($originCommandId != "")
     $originId --> $id
