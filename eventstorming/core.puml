@@ -1,15 +1,15 @@
-!$LIB_BASE?="https://raw.githubusercontent.com/sidneydemoraes/libs-plantuml/main"
+!$LIB_BASE?="https://raw.githubusercontent.com/sidcoelho/libs-plantuml/main"
 !include $LIB_BASE/common.puml
 
 !global $EVENT_BG_COLOR?="Orange"
 !global $COMMAND_BG_COLOR?="MediumTurquoise"
-!global $SYSTEM_BG_COLOR?="Pink" 
-!global $AGGREGATE_BG_COLOR?="LightGoldenRodYellow" 
-!global $ACTOR_BG_COLOR?="Gold" 
-!global $POLICY_BG_COLOR?="MediumPurple" 
+!global $SYSTEM_BG_COLOR?="Pink"
+!global $AGGREGATE_BG_COLOR?="LightGoldenRodYellow"
+!global $ACTOR_BG_COLOR?="Gold"
+!global $POLICY_BG_COLOR?="MediumPurple"
 !global $READ_MODEL_BG_COLOR?="YellowGreen"
 
-left to right direction 
+left to right direction
 
 skinparam rectangle {
   FontColor $FONT_COLOR
@@ -32,7 +32,7 @@ skinparam rectangle<<DomainEvent>> {
 
 !procedure Command($id, $name="", $originId="" )
   ESCard($id, Command, $name, $originId)
-!endprocedure 
+!endprocedure
 
 skinparam rectangle<<Command>> {
   BackgroundColor $COMMAND_BG_COLOR
@@ -40,7 +40,7 @@ skinparam rectangle<<Command>> {
 
 !procedure System($id, $name="", $originId="" )
   ESCard($id, System, $name, $originId)
-!endprocedure 
+!endprocedure
 
 skinparam rectangle<<System>> {
   BackgroundColor $SYSTEM_BG_COLOR
@@ -48,7 +48,7 @@ skinparam rectangle<<System>> {
 
 !procedure Aggregate($id, $name="", $originId="" )
   ESCard($id, Aggregate, $name, $originId)
-!endprocedure 
+!endprocedure
 
 skinparam rectangle<<Aggregate>> {
   BackgroundColor $AGGREGATE_BG_COLOR
@@ -56,7 +56,7 @@ skinparam rectangle<<Aggregate>> {
 
 !procedure Actor($id, $name="", $originId="" )
   ESCard($id, Actor, $name, $originId)
-!endprocedure 
+!endprocedure
 
 skinparam rectangle<<Actor>> {
   BackgroundColor $ACTOR_BG_COLOR
@@ -64,7 +64,7 @@ skinparam rectangle<<Actor>> {
 
 !procedure Policy($id, $name="", $originId="" )
   ESCard($id, Policy, $name, $originId)
-!endprocedure 
+!endprocedure
 
 skinparam rectangle<<Policy>> {
   BackgroundColor $POLICY_BG_COLOR
@@ -72,7 +72,7 @@ skinparam rectangle<<Policy>> {
 
 !procedure ReadModel($id, $name="", $originId="" )
   ESCard($id, ReadModel, $name, $originId)
-!endprocedure 
+!endprocedure
 
 skinparam rectangle<<ReadModel>> {
   BackgroundColor $READ_MODEL_BG_COLOR
