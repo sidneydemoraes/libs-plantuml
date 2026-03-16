@@ -17,7 +17,7 @@ skinparam rectangle {
 
 !unquoted procedure ESCard($id, $stereotype, $name="", $originId="")
   Card($id, rectangle, $stereotype, $name)
-  !if ($originCommandId != "")
+  !if ($originId != "")
     $originId --> $id
   !endif
 !endprocedure
