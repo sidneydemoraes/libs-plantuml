@@ -11,13 +11,13 @@
   title
   <color:$FONT_COLOR><size:$FONT_SIZE_LG>$title</size></color>
   !if ($subtitle)
-    <color:$FONT_COLOR><size:$FONT_SIZE_MD>$subtitle</size></color>
+    <color:$FONT_COLOR><size:$FONT_SIZE_M><i>$subtitle</i></size></color>
   !endif
   !if ($version)
-    <color:$FONT_COLOR><size:$FONT_SIZE_MD>"Version: " + $version</size></color>
+    <color:$FONT_COLOR><size:$FONT_SIZE_SM>"Version: " + $version</size></color>
   !endif
   !if ($date)
-    <color:$FONT_COLOR><size:$FONT_SIZE_MD>"Last modified: " + $date</size></color>
+    <color:$FONT_COLOR><size:$FONT_SIZE_SM>"Last modified: " + $date</size></color>
   !endif
   end title
 !endprocedure
