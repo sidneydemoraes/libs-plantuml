@@ -8,7 +8,7 @@
 
 ' Common Procedures
 !procedure Title($title, $subtitle="", $version="", $date="")
-  left header
+  title
   <color:$FONT_COLOR><size:$FONT_SIZE_LG>$title</size></color>
   !if ($subtitle)
     <color:$FONT_COLOR><size:$FONT_SIZE_MD>$subtitle</size></color>
@@ -19,7 +19,7 @@
   !if ($date)
     <color:$FONT_COLOR><size:$FONT_SIZE_MD>"Last modified: " + $date</size></color>
   !endif
-  end header
+  end title
 !endprocedure
 
 !procedure SketchMode()
