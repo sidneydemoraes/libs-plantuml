@@ -7,6 +7,10 @@
 !global $FONT_SIZE_LG?=20
 
 
+!function $fingerprint()
+  !return "00001"
+!endfunction
+
 ' Common Procedures
 !procedure Title($title, $subtitle="", $version="", $date="")
   title
@@ -46,6 +50,7 @@
   center footer
     <size:$FONT_SIZE_SM><color:red>WARNING</color>: <color:$LIGHT_FONT_COLOR>this sketch requires validation.</color></size>
     <size:$FONT_SIZE_SM><color:$LIGHT_FONT_COLOR>Do not use for production.</color></size>
+  $fingerprint()
   end footer
 !endprocedure
 
