@@ -17,7 +17,7 @@ skinparam rectangle {
 
 !unquoted procedure ESCard($id, $stereotype, $name="", $originId="", $connDirection="")
   Card($id, rectangle, $stereotype, $name)
-  !if ($originId == "")
+  !if ($originId != "")
     !$dir = %lower($connDirection)
 
     !if ($dir == "up" || $dir == "u")
@@ -35,7 +35,7 @@ skinparam rectangle {
 !endprocedure
 
 !procedure Event($id, $name="", $originId="", $connDirection="")
-  ESCard($id, DomainEvent, $name, $originId, $connDirection="")
+  ESCard($id, DomainEvent, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<DomainEvent>> {
@@ -43,7 +43,7 @@ skinparam rectangle<<DomainEvent>> {
 }
 
 !procedure Command($id, $name="", $originId="", $connDirection="")
-  ESCard($id, Command, $name, $originId, $connDirection="")
+  ESCard($id, Command, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<Command>> {
@@ -51,7 +51,7 @@ skinparam rectangle<<Command>> {
 }
 
 !procedure System($id, $name="", $originId="", $connDirection="")
-  ESCard($id, System, $name, $originId, $connDirection="")
+  ESCard($id, System, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<System>> {
@@ -59,7 +59,7 @@ skinparam rectangle<<System>> {
 }
 
 !procedure Aggregate($id, $name="", $originId="", $connDirection="")
-  ESCard($id, Aggregate, $name, $originId, $connDirection="")
+  ESCard($id, Aggregate, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<Aggregate>> {
@@ -67,7 +67,7 @@ skinparam rectangle<<Aggregate>> {
 }
 
 !procedure Actor($id, $name="", $originId="", $connDirection="")
-  ESCard($id, Actor, $name, $originId, $connDirection="")
+  ESCard($id, Actor, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<Actor>> {
@@ -75,7 +75,7 @@ skinparam rectangle<<Actor>> {
 }
 
 !procedure Policy($id, $name="", $originId="", $connDirection="")
-  ESCard($id, Policy, $name, $originId, $connDirection="")
+  ESCard($id, Policy, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<Policy>> {
@@ -83,7 +83,7 @@ skinparam rectangle<<Policy>> {
 }
 
 !procedure ReadModel($id, $name="", $originId="", $connDirection="")
-  ESCard($id, ReadModel, $name, $originId, $connDirection="")
+  ESCard($id, ReadModel, $name, $originId, $connDirection)
 !endprocedure
 
 skinparam rectangle<<ReadModel>> {
