@@ -1,0 +1,3 @@
+!$LIB_C4_VERSION?="master"
+!$LIB_C4?="https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/$LIB_C4_VERSION"
+!include $LIB_C4/C4_Container.puml
