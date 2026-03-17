@@ -7,9 +7,13 @@
 !global $FONT_SIZE_LG?=20
 
 
-!function $fingerprint()
-  !return "00001"
+!function $build_version()
+  !return "v0.1 b260317.0846"
 !endfunction
+
+right footer
+  <size:$FONT_SIZE_XS><color:$LIGHT_FONT_COLOR>$build_version()</color></size>
+end footer
 
 ' Common Procedures
 !procedure Title($title, $subtitle="", $version="", $date="")
@@ -47,11 +51,10 @@
     !option handwritten true
   !endif
 
-  center footer
+  center caption
     <size:$FONT_SIZE_SM><color:red>WARNING</color>: <color:$LIGHT_FONT_COLOR>this sketch requires validation.</color></size>
     <size:$FONT_SIZE_SM><color:$LIGHT_FONT_COLOR>Do not use for production.</color></size>
-  $fingerprint()
-  end footer
+  end caption
 !endprocedure
 
 !unquoted procedure Card($id, $shape, $stereotype, $name="")
